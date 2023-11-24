@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Adário (Chiara's Version) </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #texto {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out;
+            color: white;
+            font-size: 40px;
+        }
+
+        #opcao-maluca {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        h1 {
+            margin-top: 200px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        body {
+            background-color: rgb(255, 205, 226);
+        }
+
+        
+    </style>
+</head>
+
+<body bgcolor="#565e51">
+
+
+    <h1>oii chiara, eu sei que errei, vacilei, mas, to aqui pra pedir desculpas e dizer que eu virei muito fã da taylor
+        swift, muito mesmo, eu decorei todos os albuns, decorei as letras de algumas músicas e tô até curtindo escutar,
+        and when you go crashing down, we come back every time, cause we never go out of style! <br> volta vida? </h1>
+
+    <div id="texto" onmouseover="moverTexto()">não</div>
+    <a href="https://youtu.be/thJ0sUR_sWg?si=Qxr1wCHt3HdCO-Cb" target="_blank" id="opcao-maluca">simm</a>
+
+    <script>
+        function moverTexto() {
+            var texto = document.getElementById("texto");
+            var novaPosicaoTop = Math.random() * (window.innerHeight - texto.offsetHeight);
+            var novaPosicaoLeft = Math.random() * (window.innerWidth - texto.offsetWidth);
+
+            texto.style.top = novaPosicaoTop + "px";
+            texto.style.left = novaPosicaoLeft + "px";
+        }
+    </script>
+</body>
+
+</html>
